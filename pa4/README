@@ -1,0 +1,62 @@
+/********************************************************************************* 
+* Brandon Hwu, brhwu
+* 2022 Spring CSE101 PA4
+* README 
+* PA4 README 
+*********************************************************************************/
+
+List of files
+
+Sparse.c 
+Matrix.c
+Matrix.h
+MatrixTest.c
+List.c
+List.h
+ListTest.c
+README
+Makefile 
+
+Description
+
+Sparse.c is the main program and takes two files, one input and one output.
+
+The input file starts with a line stating the number of row and columns of the matrix, a number stating how many
+non-zero entries for the first matrix, and a number stating how many non-zero entries for the second matrix.
+
+The output file will list the matrices in the following order.
+A, B , (1.5)A, A+B, A+A, B-A, A-A, Transpose(A), AB, BB
+
+Matrix.c is the implementation file for the Matrix ADT and contains the functions to manipulate the matrix ADT.
+
+Matrix.h is the header file for most of the functions Matrix.c and lets Sparse.c use those functions.
+
+MatrixTest.c is a file that tests the functions in Matrix.c.
+
+List.c is the implementation file for the List ADT and contains the functions to manipulate the list ADT.
+
+List.h is the header file for most of the functions in List.c and lets Matrix.c and Sparse.c use those functions.
+
+ListTest.c is a file that tests the functions in List.c.
+
+README is this file and gives a list and description of all the files submitted.
+
+Makefile compiles the files List.h, List.c, ListTest.c, Matrix.c, Matrix.h, MatrixTest.c, and Sparse.c into an executable.
+
+
+
+How to Run
+
+With all the files in the same directory type in "make" to make the Sparse executable, "make MatrixTest" to 
+make the MatrixTest executable, and "make ListTest" to make the ListTest executable.
+
+To run the executable type in "./<file_name>" without the file extension.
+
+The Sparse executable requires two text files for it to run which mean you have to type
+
+"./Sparse <text_file> <text_file>"
+
+Type "make clean" to remove all binaries and executables.
+
+Type "make SparseCheck" to test Sparse for memory leaks, type "make MatrixCheck" to test MatrixTest for memory leaks,
+and type "make ListCheck" to test ListTest for memory leaks.

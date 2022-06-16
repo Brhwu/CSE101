@@ -1,0 +1,49 @@
+/********************************************************************************* 
+* Brandon Hwu, brhwu
+* 2022 Spring CSE101 PA5
+* README 
+* PA5 README 
+*********************************************************************************/
+
+List of files
+
+README
+Makefile
+List.h
+List.cpp
+ListTest.cpp
+Shuffle.cpp
+
+
+Description
+
+README is this file and gives a list and description of all the files submitted.
+
+Makefile compiles the files List.h, List.cpp, ListTest.cpp, and Shuffle.cpp into an executable.
+
+List.h is the header file for most of the functions in List.cpp and lets Sparse.cpp use those functions.
+
+List.cpp is the implementation file for the List ADT and contains the functions to manipulate the list ADT.
+
+ListTest.cpp is a file that tests the functions in List.cpp.
+
+Shuffle.cpp is the main program and takes a single command line arguement, a positive number (n), that will specify the 
+max number of cards in the deck.  It will print out a table that states the deck size (1 to n) and how many perfect shuffles
+it takes until the original order is restored.
+
+
+How to Run
+
+With all the files in the same directory type in "make" to make the Shuffle executable, 
+and "make ListTest" to make the ListTest executable.
+
+To run the executable type in "./<file_name>" without the file extension.
+
+The Shuffle executable requires a single command line argument meaning you will have to enter
+
+"./Shuffle <number>"
+
+Type "make clean" to remove all binaries and executables.
+
+Type "make check2" to test Shuffle for memory leaks, type "make check3" to test ListTest for memory leaks.
+It will make a txt file that has the output of valgrind.

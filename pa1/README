@@ -1,0 +1,31 @@
+/********************************************************************************* 
+* Brandon Hwu, brhwu
+* 2022 Spring CSE101 PA1 
+* README 
+* PA1 README 
+*********************************************************************************/
+
+List of files
+
+List.h
+List.c
+ListTest.c
+Lex.c
+Makefile
+README
+
+Description
+
+List.h is the header file for most of the functions in List.c and lets Lex.c use those functions.
+
+List.c is the implementation file for the List ADT and contains the functions to manipulate the ADT.
+
+ListTest.c is a tester file to ensure that the functions in List.c work.
+
+Lex.c is the main program and takes two files, one input and one output, and arrange the output file in lexicographic order of the input file.
+The input and output files have to have the same amount of lines.
+Lex.c will utilize the files List.h and List.c to sort the lines.
+
+Makefile compiles the files, Lex.c, List.c, List.h, and ListTest.c into an executable.
+
+README is this file and gives a list and description of all the files submitted.

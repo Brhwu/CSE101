@@ -1,0 +1,78 @@
+/********************************************************************************* 
+* Brandon Hwu, brhwu
+* 2022 Spring CSE101 PA8
+* README 
+* PA8 README 
+*********************************************************************************/
+
+List of files
+
+README 
+Makefile
+Dictionary.h
+Dictionary.cpp
+DictionaryTest.cpp
+Order.cpp
+WordFrequency.cpp
+
+
+Description
+
+README is this file and gives a list and description of all the files submitted.
+
+Makefile compiles the files Dictionary.h, Dictionary.cpp, DictionaryTest.cpp, and Order.cpp into an executable.
+
+Dictionary.h is the header file for the functions in Dictionary.cpp and lets Order.c use those functions.
+
+Dictionary.cpp is the implementation file for the Dictionary ADT and contains the functions to manipulate the Dictionary ADT.
+
+DictionaryTest.cpp is a file that tests the functions in Dictionary.cpp.
+
+Order.cpp is one of the two top-level clients and takes two files, one input and one output.
+
+The input file will have each line be a unique single string that will used as keys in the dictionary.
+The line number in the input file where the string was read will be the corresponding value.
+
+The output file will contain two string representations of the Dictionary with the first string
+consisting of pairs in the form
+
+"key : value\n"
+
+and will be in alphabetical order.
+The second string will consist of keys, one line at a time, in the order of a pre-order tree walk.
+
+
+WordFrequency.cpp is one of the two top-level clients and takes two files, one input and one output.
+
+Each line in the input file will be read and each word in the line will be read.
+All words will be in lower case characters and placed as a key.
+The value will be how many times the word/key is read.
+
+The output file will contain a string representation of the Dictionary with the string
+consisting of pairs in the form
+
+"key : value\n"
+
+and will be in alphabetical order.
+
+
+How to Run
+
+With all the files in the same directory type in "make" to make the Order executable, 
+and type "make DictionaryTest" to make the DictionaryTest executable.
+
+To run the executable type in "./<file_name>" without the file extension.
+
+The Order and WordFrequency executable requires two text files for it to run which mean you have to type
+
+"./Order <text_file> <text_file>"
+
+or
+
+"./WordFrequency <text_file> <text_file>"
+
+Type "make clean" to remove all binaries and executables.
+
+Type "make OrderCheck" to run Order in valgrind on in5 and junk5,
+type "make WordFrequency" to run WordFrequency in valgrind on Gutenberg.txt, and
+type "make DictionaryCheck" to run DictionaryTest in valgrind.

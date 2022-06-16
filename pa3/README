@@ -1,0 +1,63 @@
+/********************************************************************************* 
+* Brandon Hwu, brhwu
+* 2022 Spring CSE101 PA3
+* README 
+* PA3 README 
+*********************************************************************************/
+
+List of files
+
+README
+Makefile
+List.h
+List.c
+Graph.h
+Graph.c
+GraphTest.c
+FindComponents.c
+
+Description
+
+README is this file and gives a list and description of all the files submitted.
+
+Makefile compiles the files List.h, List.c, Graph.h, Graph.c, GraphTest.c, and FindComponents.c into an executable.
+
+List.h is the header file for most of the functions in List.c and lets Graph.c and FindComponents.c use those functions.
+
+List.c is the implementation file for the List ADT and contains the functions to manipulate the list ADT.
+
+Graph.h is the header file for most of the functions in List.c and lets Graph.c and FindComponents.c use those functions.
+
+Graph.c is implementation file for the Graph ADT and contains the functions to manipulate the graph ADT.
+
+GraphTest.c is a file that tests the functions in Graph.c.
+
+FindComponents.c is the main program and takes two files, one input and one output.
+
+The input file starts with a line stating the number of vertices in the graph and every following line represents an
+arc with a pair of different numbers.  
+
+The output file prints out an adjacency list of every node in the graph and lists all strongly connected components.
+
+Makefile compiles the files List.h, List.c, Graph.h, Graph.c, GraphTest.c, and FindComponents.c into an executable.
+
+
+How to Run
+
+With all the files in the same directory type in "make" to make the FindComponents executable, "make GraphClient" to 
+make the GraphClient executable, and "make GraphTest" to make the GraphTest executable.
+
+To run the executable type in "./<file_name>" without the file extension.
+
+The FindComponents executable requires two text files for it to run which mean you have to type
+
+"./FindComponents <text_file> <text_file>"
+
+Type "make clean" to remove all binaries and executables.
+
+Type "make checkFind" to test FindComponents for memory leaks, type "make checkClient" to test GraphClient for memory leaks,
+and type "make checkTest" to test GraphTest for memory leaks.
+
+Notes
+
+Time is a field in Graph.

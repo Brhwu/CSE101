@@ -1,0 +1,61 @@
+/********************************************************************************* 
+* Brandon Hwu, brhwu
+* 2022 Spring CSE101 PA2
+* README 
+* PA2 README 
+*********************************************************************************/
+
+List of files
+
+List.c
+List.h
+Graph.c
+Graph.h
+GraphTest.c
+FindPath.c
+Makefile
+README
+
+Description
+
+List.c is the implementation file for the List ADT and contains the functions to manipulate the list ADT.
+
+List.h is the header file for most of the functions in List.c and lets Graph.c and FindPath.c use those functions.
+
+Graph.c is implementation file for the Graph ADT and contains the functions to manipulate the graph ADT.
+
+Graph.h is the header file for most of the functions in List.c and lets Graph.c and FindPath.c use those functions.
+
+GraphTest.c is a file that tests the functions in Graph.c.
+
+FindPath.c is the main program and takes two files, one input and one output.
+
+The input file has two parts.  The first part starts with a line stating the number of vertices in the graph
+and every following line represents and edge by a pair of different numbers.  The two parts are seperated by "0 0".
+The second part will consist of a number of lines that each compose of a pair of integers in the range of the 
+number of vertices.  The first interger of the pain represnts the source and the second interger represnts the 
+destination.  The second part also ends with "0 0".
+
+The output file prints out a list of every node and what they are adjacent to and prints a path and distance of nodes.
+
+Makefile compiles the files List.c, List.h, Graph.c, Graph.h, GraphTest.c, and FindPath.c into an executable.
+
+README is this file and gives a list and description of all the files submitted.
+
+
+How to Run
+
+With all the files in the same directory type in "make" to make the FindPath executable, "make GraphClient" to 
+make the GraphClient executable, and "make GraphTest" to make the GraphTest executable.
+
+To run the executable type in "./<file_name>" without the file extension.
+
+The FindPath executable requires two text files for it to run which mean you have to type
+
+"./FindPath <text_file> <text_file>"
+
+Type "make clean" to remove all binaries and executables.
+
+Type "make checkFind" to test FindPath for memory leaks, type "make checkClient" to test GraphClient for memory leaks,
+and type "make checkTest" to test GraphTest for memory leaks
+

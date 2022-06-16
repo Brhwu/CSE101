@@ -1,0 +1,66 @@
+/********************************************************************************* 
+* Brandon Hwu, brhwu
+* 2022 Spring CSE101 PA6
+* README 
+* PA6 README 
+*********************************************************************************/
+
+List of files
+
+Arithmetic.cpp 
+BigInteger.cpp 
+BigInteger.h 
+BigIntegerTest.cpp 
+List.cpp 
+List.h 
+ListTest.cpp 
+Makefile
+README 
+
+
+Description
+
+Arithmetic.cpp is the main program and takes two files, one input and one output.
+The input file contains 3 lines, the first line has an optional sign character (+ or −) 
+followed by any number of decimal digits, the second line is a blank line, 
+and the third line has an optional sign character (+ or −) followed by any number of decimal digits.
+
+BigInteger.cpp is the implementation file for the BigInteger ADT and contains 
+the functions to manipulate the BigInteger ADT.
+
+BigInteger.h is the header file for most of the functions in BigInteger.cpp and 
+lets Arithmetic.cpp use those functions.
+
+BigIntegerTest.cpp is a file that tests the functions in BigInteger.cpp.
+
+List.cpp is the implementation file for the List ADT and contains 
+the functions to manipulate the List ADT.
+
+List.h is the header file for most of the functions in List.cpp and 
+lets BigInteger.cpp and Arithmetic.cpp use those functions.
+
+ListTest.cpp is a file that tests the functions in List.cpp.
+
+Makefile is this file and gives a list and description of all the files submitted.
+
+README is this file and gives a list and description of all the files submitted.
+
+
+How to Run
+
+With all the files in the same directory type in "make" to make the Arithmetic executable, 
+type "make BigIntegerTest" to make the BigIntegerTest executable and type "make ListTest" 
+to make the ListTest executable,.
+
+To run the executable type in "./<file_name>" without the file extension.
+
+The Arithmetic executable requires two text files for it to run which mean you have to type
+
+"./Arithmetic <text_file> <text_file>"
+
+Type "make clean" to remove all binaries and executables.
+
+Type "make ArithmeticCheck" to run Arithmetic in valgrind, 
+type "BigIntegerCheck" to run BigIntegerTest in valgrind,
+and type "make ListCheck" to run ListTest in valgrind.
+
